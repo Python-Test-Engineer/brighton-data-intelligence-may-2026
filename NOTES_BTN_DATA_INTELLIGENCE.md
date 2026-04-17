@@ -1,5 +1,11 @@
 <!-- https://mconverter.eu/convert/markdown/html/ -->
 
+# GitHub Repo
+
+[https://github.com/Python-Test-Engineer/brighton-data-intelligence-may-2026](https://github.com/Python-Test-Engineer/brighton-data-intelligence-may-2026)
+
+<img src="">
+
 ## Aim
 
 1. To see that it can be just 'AI as API', albeit a very magical API.
