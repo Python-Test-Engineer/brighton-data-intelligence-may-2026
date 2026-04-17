@@ -1,30 +1,12 @@
 <!-- https://mconverter.eu/convert/markdown/html/ -->
 
-<img src="./craig-west-pydata-southampton.png" width="600px">
-
-The repo containing all the materials is here:
-
-[https://pytest-cookbook.com/](https://pytest-cookbook.com/) (has link)
-
-or
-
-[https://github.com/Python-Test-Engineer/pydata-southampton](https://github.com/Python-Test-Engineer/pydata-southampton) (direct)
-
-All links used are in LINKS.md
-
-I will show you the repo and this is a mini-workshop effectively that can also be used for future reference.
-
-And I will be using NOTES_PYDATA.md/NOTES_PYDATA.html for this talk so you can follow along with me. There will repetition of some information between my NOTES and the NOTEBOOKS to clarify matters.
-
-The talk will be mostly code walkthroughs with notebooks that have a lot of comments for completeness and clarification.
-
 ## Aim
 
 1. To see that it can be just 'AI as API', albeit a very magical API.
 2. To show that AI based apps need not be all AI or not at all, but we can have 'a bit of AI in our apps'.
-3. To show that it is 'business as usual' as Pythonistas, using our experience and skills to create AI Apps.
+3. To show that it is 'business as usual' as Data Intelliegence, using our experience and skills to create AI Apps.
 
-*I will use the term Data Engineering to cover Data Science, Data Analysis and other ML tasks.*
+
 <h3 style="color:#DB4C00;">
  Let's look at where Agentic Data Engineering differ from regular Data Engineering perhaps we may see that AI Agents are everyday Python with LLM API calls.
 </h3>
@@ -41,27 +23,9 @@ I was in tech in the early 2000s as a Business Information Architect and Certifi
 
 Currently, I am working on a project 'AI Powered Knowledge Systems', building a book/framework similiar to PyTest Full Stack.
 
-My links:
+Website: [https://craigwestai.com/](https://craigwestai.com/)
 
-- <https://ai-powered-knowledge-systems.netlify.app/>
-- <https://pytest-cookbook.com/>
-- <https://django-fullstack-testing.netlify.app/>
-
-### Brighton, UK
-
-<img src="./images/brighton-map.jpeg"  height="200">
-<img src="./images/i360.jpeg"  height="200">
-
-### Volunteer coach
-
-I am a volunteer coach at codebar.io/brighton
-
-<img src="./images/codebar.png" width="400" >
-
-and I also enjoy working in community kitchens and partner dancing.
-<br><br><br><br>
-
-### Leo
+### Leo and Pip
 
 Just got a Red Fox Labrador Pup Leo, (much earlier than planned):
 
@@ -159,20 +123,6 @@ The function might be a variation on the Agent we are using or it may be another
 
 The `function` might be a Python function or a class.
 
-## 3rd Party Agents and Tools
-
-[https://aiagentsdirectory.com/allstats](https://aiagentsdirectory.com/allstats) shows the number of growing Agents available as stand alone Agentic systems.
-
-However, two new protocols have emerged this year: Model Context Protocol, (MCP), and Agent 2 Agent, (A2A).
-
-If we think of our mobile phone, we have a number of apps installed. For a particular app, we can add 'extensions' to increase its capabilities. MCP is the protocol that enables discoverability and implementation of 3rd party TOOLS for our app, (Agent), to use.
-
-A2A is the protocol that enables discoverability and implementation of 3rd party AGENTS for our app, (Agent), to use.
-
-With this in mind, we can see a future where we will be using many 3rd party Tools and Agents as we might use APIs.
-
-Before we go into some code examples, we will refresh ourselves that a REST API a request is sending a payload of data to a server and then the server returns a response.
-
 This is a very simple example of a REST API.
 
 Again, this is to demystify and simplify any libraries we may import for convenience functions.
@@ -197,8 +147,8 @@ payload = {
        {"role": "system", "content": system_prompt},
        {"role": "user", "content": user_prompt},
    ],
-   "stream": False,
-   "temperature": temperature, 
+   "stream": False, # we can stream response
+   "temperature": temperature, # degree of variation with randomness
 }
 
 Low Temperature:
@@ -223,35 +173,19 @@ The bag is filled with a mix of colors, and all colors are equally likely. High 
 
 ## There is only one endpoint. We don't use other endpoints for differing tasks, there is just one end point and we will create our custom endpoint through prompt engineering.
 
-```
-
 The request is text and does not contain any objects or other data types.
 
 Likewise, we get a text response. We pass some text to a function and get some text back.
 
-(Current models are 'Imperative' in that we say what they are, what they do, how they do it...New REASONING models are 'Declarative' in that we say what we want them to do - the goal - what we want as output and what we might not want. The model then 'reasons' its way through the task.)
+```
 
 We can think of it as pseudo-code which we may write whilst developing an app.
 
 In fact, it is like a person starting a new job. They will get a handbook of what the job involves, how to do it etc. and this is what we are doing with the LLM. 
 
-![ESSENCE](./101_ESSENCE.png)
+![ESSENCE](./images/101_ESSENCE.png)
 
-Let's go to the notebooks and see some code examples.
-
-# 4 main patterns
-
-Andrew Ng describes four main patterns
-
-<https://www.deeplearning.ai/the-batch/how-agents-can-improve-llm-performance/>
-
-![patterns](./images/4-patterns.png)
-
-We have seen examples of these in this talk, bar a multi-agent pattern.
-
-## REFLECTION PATTERN
-
-![REFLECTION](./100_INPUT_OUTPUT.png)
+![REFLECTION](./images/100_INPUT_OUTPUT.png)
 
 input -> function(input) -> output -> function(output) -> output2
 
@@ -259,72 +193,4 @@ We generate a response with our first query using a system prompt to create code
 
 We then pass the output into another function that acts as a reviewer to produce the next version of the code.
 
-## TOOLS
-
-We have seen Tool Calling previously.
-
-## PLANNING
-
-We have seen planning previously.
-
-# When might we use LLMs/Agents?
-
-![open-ai](./102_WHEN.png)
-
-## MULTI AGENT
-
-### Libraries
-
-I like to think of Libraries as frameworks without the framework! By this I mean we get building blocks to help us build things without having to conform to a building plan.
-
-#### Pydantic AI
-
-Pydantic is well known in everyday Python and is used by most AI Agent frameworks as structured data validation is vital.
-
-PydanticAI is a library/framework that uses Pydantic to create AI Agents.
-
-#### Huggingface SmolAgents
-
-HF SmolAgents is a library/framework that uses Huggingface Transformers to create AI Agents. It has broken new ground throught the use of its CodeAgent where tool calling is done via Python rather than JSON...show images...
-
-### Crews/Swarms
-
-Crews and Swarms are design patterns for MultiAgent collaboration. They each have their own use cases and we saw earlier that AI Agents can emit the 'next' step in the app which a range of desing patterns can harness.
-
-- <https://aiagentsdirectory.com/category/ai-agents-frameworks>
-
-## Frameworks
-
-There are many frameworks and libraries that can be used to create AI Agents. Some are more focused on the AI Agent and some are more focused on the UI.
-
-LlamaIndex
-Langchain
-Langraph
-AutoGen
-CrewAI
-
-And there are many low/no code versions as we saw in the [AI Agents Directory](https://aiagentsdirectory.com/category/ai-agents-frameworks)
-
-# Testing and Evaluation
-
-We need a set of Ground Truths for various inputs for our workflow as well as a set of Ground Truths for tools and other functions used within an agent.
-
-Similar principles to regular testing but if the outputs are unstructured text then we need to find a way to verify accuracy. LLM as Judge or Human Evaluation can be used.
-
-The ROUTER example can be tested to see if the right report is selected for a set of Ground Truths.
-
-The FAQ example can be tested to see if answers to questions are correct.
-
-![testing](./103_TESTS.png)
-
-## <https://ai-powered-knowledge-systems.netlify.app/evaluation/overview/>
-
-Useful article: [LLM as Judge](https://medium.com/towards-generative-ai/judgeit-automating-rag-evaluation-using-llm-as-a-judge-d7c10b3f2eeb)
-
-## Summary
-
-I hope AI Agents have been demystified and helped us understand what they can do, enabling us to either build our own frameworks or use existing ones, with a deeper appreciation and understanding of how they work.
-
-![when to use](./images/when-to-use-anthropic.png)
-
-Many talks on AI Agents stress using simple agents and introduce them bit by bit rather than create one large Agentic App.
+![ReAct](./images/react.png)
