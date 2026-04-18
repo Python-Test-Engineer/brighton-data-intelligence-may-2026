@@ -126,7 +126,7 @@ For the purpose of this talk I will use the term `function` in the mathematical 
 
 The function might be a variation on the Agent we are using or it may be another Agent that accepts the opuput as input. No different to Python Classes/Functions in an App.
 
-<img src="./100_INPUT_OUTPUT.png" width=1000px>
+<img src="./images/100_INPUT_OUTPUT.png" width=1000px>
 
 The `function` might be a Python function or a class.
 
