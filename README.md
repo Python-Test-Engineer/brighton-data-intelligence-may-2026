@@ -8,8 +8,10 @@ This has the HMTL pages with API requests to OpenAI
 
 Files explaining the HTML PAGES
 
-## YT Series
+## LINKS.md
 
-AI AGENTS HTML
+This contains all the links I refer to and many additonal ones that may be of value.
 
-https://www.youtube.com/playlist?list=PLsszRSbzjyvkWzP6wtfx_LK441YGFkziR
+## NOTES_BTN_DATA_INTELLIGENCE.md
+
+These are the 'slides' of the talk.
