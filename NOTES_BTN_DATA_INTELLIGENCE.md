@@ -134,14 +134,14 @@ Providing the required information either statically or dynamically.
 
 ## Let's use Email as an analogy
 
-<img src="./images/email01-basic-request.png" width=1000px>
+<img src="./images/email01-basic-request.png" width=600px>
 
-<img src="./images/rag-info.png" width=1000px>
+<img src="./images/rag-info.png" width=600px>
 
-<img src="./images/email02-folow-up.png" width=1000px>
+<img src="./images/email02-folow-up.png" width=600px>
 
-<img src="./images/email03-anthropic-tool.png" width=1000px>
+<img src="./images/email03-anthropic-tool.png" width=600px>
 
-<img src="./images/email04-tool-calling.png" width=1000px>
+<img src="./images/email04-tool-calling.png" width=600px>
 
-<img src="./images/email05-react.png" width=1000px>
+<img src="./images/email05-react.png" width=600px>
