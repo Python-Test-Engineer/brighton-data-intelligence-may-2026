@@ -48,14 +48,13 @@
 
          // We can add additional context for RAG (Retrieval Augmented Generation) here which was not in trained model. It can also be dynamic content retrieved from a database or API - we will see that later.
          RAG = `
-            Brighton Web Development Meet Up is taking place on October 29th.
-            The venue is the Skiff.
-            The event starts at 6:30 PM and finishes at 9:00 PM.
+            Brighton Data Intelligence Meet Up is taking place on October 29th.
+            The venue is the Platform9.
+            The event starts at 6:00 PM and finishes at 8:00 PM.
             The Speaker is Craig West and the topic is 'AI Agents and Evals for all languages'
             Brighton Web Development Meet Up is part of Silicon Brighton.
-            The current organiser is Gavin and it has been running since <strong>1865 (3rd October 1865)</strong> the first meetup being organised by Peter.
-            Similar meet ups are WordUp Brighton, BrightonPy, PHP Sussex and many more.
-            Details at siliconbrighton.com.`
+            The current organiser is Datacove and it has been running since <strong>1865 (3rd October 1865)</strong> the first meetup being organised by Datacove.
+           `
 
          system_prompt += RAG;
          console.log(system_prompt);
