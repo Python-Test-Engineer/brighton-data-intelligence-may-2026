@@ -34,8 +34,8 @@ Website: [https://craigwestai.com/](https://craigwestai.com/)
 
 ### Leo and Pip
 <img src="./images/pip-in-crate.jpeg" width="400px" >
-<img src="./images/leo-pip-together.jpeg" width="400px" >
 <img src="./images/leo-main.png" width="250px" >
+<img src="./images/leo-pip-2.jpg" width="400px" >
 
 We have a local red fox that is apt to follow us...
 
