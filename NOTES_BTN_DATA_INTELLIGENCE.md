@@ -108,8 +108,6 @@ This is a very simple example of a REST API.
 
 Again, this is to demystify and simplify any libraries we may import for convenience functions.
 
-![REFLECTION](./images/100_INPUT_OUTPUT.png)
-
 input -> function(input) -> output -> function(output) -> output2
 
 We generate a response with our first query using a system prompt to create code.
@@ -135,13 +133,16 @@ Providing the required information either statically or dynamically.
 ## Let's use Email as an analogy
 
 <img src="./images/email01-basic-request.png" width=600px>
+<br>
+
+### We can add context and this is 'In Context Learning'. It can also be derived programatically.
 
 <img src="./images/rag-info.png" width=600px>
 
 <img src="./images/email02-folow-up.png" width=600px>
 
-<img src="./images/email03-anthropic-tool.png" width=600px>
-
 <img src="./images/email04-tool-calling.png" width=600px>
+
+<img src="./images/email03-anthropic-tool.png" width=600px>
 
 <img src="./images/email05-react.png" width=600px>
