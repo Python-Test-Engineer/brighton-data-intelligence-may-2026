@@ -6,6 +6,7 @@
 
 <img src="https://raw.githubusercontent.com/Python-Test-Engineer/brighton-data-intelligence-may-2026/main/qr_brighton_data_intelligence.png">
 
+<br><br><br><br>
 
 ## Aim
 
@@ -15,10 +16,12 @@
 
 Finally, we will look at an example Data Intelligence Agent.
 
-
 <h3 style="color:#DB4C00;">
  Let's look at where Agentic Data Engineering differ from regular Data Engineering perhaps we may see that AI Agents are everyday Python with LLM API calls.
 </h3>
+
+
+<br><br><br><br>
 
 ## Who am I?
 
@@ -49,6 +52,7 @@ We have a local red fox that is apt to follow us...
 
 ...cut and paste was cut and paste!
 
+<br><br><br><br>
 
 # What are AI Agents?
 
@@ -60,6 +64,7 @@ There are many definitions:
 
 Very good article [https://www.anthropic.com/research/building-effective-agents](https://www.anthropic.com/research/building-effective-agents)
 
+<br><br><br><br>
 
 ## Demystify and simplify
 
@@ -81,6 +86,8 @@ It is more about seeing the high level view and one can dig deeper into the code
 
 *Look at the patterns and structure rather than the code details* - it is what helped me get to grips with this new paradigm.
 
+<br><br><br><br>
+
 ## 180 degrees
 
 ![mouse up](./images/mouse-up.jpg)
@@ -96,9 +103,11 @@ There are 3 areas concerning Agentic AI in my opinion:
 
 For the purpose of this talk I will use the term `function` in the mathematical sense:
 
+<br><br><br><br>
+
 ### input -> function(input) -> output -> function(output) -> output2
 
-The function might be a variation on the Agent we are using or it may be another Agent that accepts the opuput as input. No different to Python Classes/Functions in an App.
+The function might be a variation on the Agent we are using or it may be another Agent that accepts the output as input. No different to Python Classes/Functions in an App.
 
 <img src="./images/100_INPUT_OUTPUT.png" width=1000px>
 
@@ -113,6 +122,8 @@ input -> function(input) -> output -> function(output) -> output2
 We generate a response with our first query using a system prompt to create code.
 
 We then pass the output into another function that acts as a reviewer to produce the next version of the code.
+
+<br><br><br><br>
 
 ## HISTORY - LOOPING - CONTEXT
 
@@ -130,6 +141,8 @@ Repeating Q/A until model feels it has a final answer.
 
 Providing the required information either statically or dynamically.
 
+<br><br><br><br>
+
 ## Let's use Email as an analogy
 
 <img src="./images/email01-basic-request.png" width=600px>
@@ -146,3 +159,43 @@ Providing the required information either statically or dynamically.
 <img src="./images/email03-anthropic-tool.png" width=600px>
 
 <img src="./images/email05-react.png" width=600px>
+
+<br><br><br><br>
+
+## HTML examples
+
+With JavaScript to use an API request (POST), we can see examples of these.
+
+<br><br><br><br>
+
+## Coding agents
+
+With the following tools, one can create one's own coding agent. LINKS.md has links to articles, videos and my mini-claude repoand others in `LINKS.md` to create your own:
+
+- list
+- read a file
+- edit a file
+- write a file
+- bash.
+
+In fact, `bash` is the only tool you need.
+
+<br><br><br><br>
+
+## Data Intelligence Agent
+
+Let's look at an example that:
+
+- given a CSV (no data card)
+- does ETL
+- create 40+ questions of an SQL nature
+- creates the SQL statement for these, runs them and saves the answer as part of the knowledge base
+- save OBJECTIVE questions that a user may want answering
+- creates all the plots and charts
+- use AI to analase each image for useful information
+- summarise all of these in one document
+- answers the OBJECTIVES
+- has a 'ASK AI' section to answer questions based on the SQL and chart analyses
+- uses another AI to be ADVERSARIAL and critique the original analysis
+
+The repo for this is in `LINKS.md`
