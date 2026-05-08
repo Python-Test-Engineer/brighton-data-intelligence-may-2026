@@ -4,7 +4,7 @@
 
 [https://github.com/Python-Test-Engineer/brighton-data-intelligence-may-2026](https://github.com/Python-Test-Engineer/brighton-data-intelligence-may-2026)
 
-<img src="https://raw.githubusercontent.com/Python-Test-Engineer/brighton-data-intelligence-may-2026/main/qr_brighton_data_intelligence.png">
+<img src="https://raw.githubusercontent.com/Python-Test-Engineer/brighton-data-intelligence-may-2026/main/qr_brighton_data_intelligence.png" width="500px">
 
 <br><br><br><br>
 
@@ -102,8 +102,6 @@ There are 3 areas concerning Agentic AI in my opinion:
 3. Autonomy - the LLM directs the flow of the app.
 
 For the purpose of this talk I will use the term `function` in the mathematical sense:
-
-<br><br><br><br>
 
 ### input -> function(input) -> output -> function(output) -> output2
 
