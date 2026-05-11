@@ -170,11 +170,11 @@ With JavaScript to use an API request (POST), we can see examples of these.
 
 With the following tools, one can create one's own coding agent. LINKS.md has links to articles, videos and my mini-claude repoand others in `LINKS.md` to create your own:
 
-- list
+- list files
 - read a file
 - edit a file
 - write a file
-- bash.
+- bash
 
 In fact, `bash` is the only tool you need.
 
