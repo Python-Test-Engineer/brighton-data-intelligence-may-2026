@@ -15,10 +15,10 @@
 3. To show that it is 'business as usual' as Data Intelliegence, using our experience and skills to create AI Apps for Data Intelligence.
 
 Finally, we will look at an example Data Intelligence Agent.
-
+<!-- 
 <h3 style="color:#DB4C00;">
  Let's look at where Agentic Data Engineering differ from regular Data Engineering perhaps we may see that AI Agents are everyday Python with LLM API calls.
-</h3>
+</h3> -->
 
 
 <br><br><br><br>
@@ -56,7 +56,7 @@ We have a local red fox that is apt to follow us...
 
 # What are AI Agents?
 
-There are many definitions:
+There are many definitions and it does not really matter:
 
 ## Anthropic
 
@@ -68,7 +68,7 @@ Very good article [https://www.anthropic.com/research/building-effective-agents]
 
 ## Demystify and simplify
 
-What I would like to achieve in this talk is to **demystify** and **simplify** AI Agents and AI Programming because it can seem like it is another different world of dev.
+What I would like to achieve in this talk is to **demystify** and **simplify** AI Agents and AI Programming because it can seem like it is another different world.
 
 What if AI Agents were 'just' code with a REST API call, admittedly a very magical API?
 
@@ -76,13 +76,11 @@ What if AI Agents were 'just' code with a REST API call, admittedly a very magic
 
 Then, we would use day to day software design patterns to handle the responses we get back from the AI Agent and move on to the next step.
 
-Business as usual for developers.
+Business as usual.
 
 This is the main focus of the talk - **demystify and simplify** - and this will enable you to create AI Agents and also construct workflows using AI Agents.
 
-With that in mind, we don't need to fully grasp the python code this time around but focus on the 'AI bit' which I will highlight.
-
-It is more about seeing the high level view and one can dig deeper into the code offline.
+Inititally, will use the analogy of email to help us see agents in a non-technical way.
 
 *Look at the patterns and structure rather than the code details* - it is what helped me get to grips with this new paradigm.
 
@@ -95,6 +93,31 @@ It is more about seeing the high level view and one can dig deeper into the code
 
 I like to use the metaphor of the upside down computer mouse. When we try to use it, it can take while to reverse our apporach. It is still the same set of movements - left, right, up and down - but in the opposite way to the way we are used to.
 
+
+## Let's use Email as an analogy
+
+<img src="./images/email01-basic-request.png" width=600px>
+<br>
+
+### We can add context and this is 'In Context Learning'. It can also be derived programatically.
+
+<br><br><br><br>
+
+## Email as an analogy
+<img src="./images/rag-info.png" width=600px>
+
+<img src="./images/email02-folow-up.png" width=600px>
+
+<img src="./images/email04-tool-calling.png" width=600px>
+
+<img src="./images/email03-anthropic-tool.png" width=600px>
+
+<img src="./images/email05-react.png" width=600px>
+
+## HISTORY/MEMORY - TOOLS/FUNCTIONS - LOOPING
+
+<br><br><br><br>
+
 There are 3 areas concerning Agentic AI in my opinion:
 
 1. Client side creation of endpoints (APIs) rather than server side prebuilt endpoints.
@@ -105,7 +128,7 @@ For the purpose of this talk I will use the term `function` in the mathematical 
 
 ### input -> function(input) -> output -> function(output) -> output2
 
-The function might be a variation on the Agent we are using or it may be another Agent that accepts the output as input. No different to Python Classes/Functions in an App.
+The function might be a variation on the Agent we are using or it may be another Agent that accepts the output as input. No different to  Classes/Functions in an App.
 
 <img src="./images/100_INPUT_OUTPUT.png" width=1000px>
 
@@ -123,7 +146,7 @@ We then pass the output into another function that acts as a reviewer to produce
 
 <br><br><br><br>
 
-## HISTORY - LOOPING - CONTEXT
+## HISTORY - LOOPING - CONTEXT - TOOLS
 
 These are three core principles that create powerful agents.
 
@@ -139,30 +162,24 @@ Repeating Q/A until model feels it has a final answer.
 
 Providing the required information either statically or dynamically.
 
-<br><br><br><br>
+### Tools
 
-## Let's use Email as an analogy
-
-<img src="./images/email01-basic-request.png" width=600px>
-<br>
-
-### We can add context and this is 'In Context Learning'. It can also be derived programatically.
-
-<img src="./images/rag-info.png" width=600px>
-
-<img src="./images/email02-folow-up.png" width=600px>
-
-<img src="./images/email04-tool-calling.png" width=600px>
-
-<img src="./images/email03-anthropic-tool.png" width=600px>
-
-<img src="./images/email05-react.png" width=600px>
+These are run-time functions that do things or get more context.
 
 <br><br><br><br>
+
 
 ## HTML examples
 
 With JavaScript to use an API request (POST), we can see examples of these.
+
+<img src="./images/01-REST-API.png" width=1000px>
+
+(In repo there is `why_temp_equal_zero_not_deterministic.md` that explains this).
+
+Let's look at some HTML examples in `HTML-PAGES` folder...
+
+(In LINKS.md there are links to explainer videos etc as well as the folder `HTML-EXPLAINERS`).
 
 <br><br><br><br>
 
