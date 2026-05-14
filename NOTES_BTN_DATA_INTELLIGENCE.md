@@ -10,22 +10,18 @@
 
 ## Aim
 
-1. To see that it can be just 'AI as API', albeit a very magical API.
-2. To show that AI based apps need not be all AI or not at all, but we can have 'a bit of AI in our apps'.
-3. To show that it is 'business as usual' as Data Intelliegence, using our experience and skills to create AI Apps for Data Intelligence.
+1. To see what an AI Agent is at its most basic implementation
 
-Finally, we will look at an example Data Intelligence Agent.
-<!-- 
-<h3 style="color:#DB4C00;">
- Let's look at where Agentic Data Engineering differ from regular Data Engineering perhaps we may see that AI Agents are everyday Python with LLM API calls.
-</h3> -->
+2. Understand the concepts of MEMORY-CONTEXT-LOOPING-TOOl_CALLING as the building blocks of AI Agents.
 
+3. See how these building blocks help us build coding/executive_assistants and finally a Data Intelligence Agent (APP).
+s
 
 <br><br><br><br>
 
 ## Who am I?
 
-**I am one of *US* - a Data Engineer.** (I will use Data Engineer as a catch all description).
+**I am one of *US* - a Data /Agentic Engibneersfsd.** (I will use Data Engineer as a catch all description).
 
 Wrestling and getting to grips with these new technologies.
 
@@ -35,9 +31,12 @@ I was in tech in the early 2000s as a Business Information Architect and Certifi
 
 Website: [https://craigwestai.com/](https://craigwestai.com/)
 
-### Leo and Pip
-<img src="./images/pip-in-crate.jpeg" width="400px" >
+### Leo and 
+
+Fox red labrador (Leo) and Cockapoo (Pip)
+
 <img src="./images/leo-main.png" width="250px" >
+<img src="./images/pip-in-crate.jpeg" width="400px" >
 <img src="./images/leo-pip-couple.jpg" width="400px" >
 
 We have a local red fox that is apt to follow us...
@@ -46,7 +45,7 @@ We have a local red fox that is apt to follow us...
 
 ### My first computer 1979
 
-!<img src="./images/paper-tape.jpg" width="400" >
+<img src="./images/paper-tape.jpg" width="400" >
 
 <https://en.wikipedia.org/wiki/Punched_tape#/media/File:Creed_model_6S-2_paper_tape_reader.jpg>
 
@@ -68,14 +67,19 @@ Very good article [https://www.anthropic.com/research/building-effective-agents]
 
 ## Demystify and simplify
 
-What I would like to achieve in this talk is to **demystify** and **simplify** AI Agents and AI Programming because it can seem like it is another different world.
+What I would like to achieve in this talk is to **demystify** and **simplify** AI Agents because it can seem like it is another different world.
 
 What if AI Agents were 'just' code with a REST API call, admittedly a very magical API?
 
 *AI (Agents) as API*...
 
-Then, we would use day to day software design patterns to handle the responses we get back from the AI Agent and move on to the next step.
+<img src="./images/01-REST-API.png" width="400" >
 
+<div style="color:orange;font-style:italic;font-size:22px">
+This snippet of code is the most important takeway tonight...to be explained
+</div>
+
+We can tghen create the HARNESS around this.
 Business as usual.
 
 This is the main focus of the talk - **demystify and simplify** - and this will enable you to create AI Agents and also construct workflows using AI Agents.
@@ -144,6 +148,8 @@ We generate a response with our first query using a system prompt to create code
 
 We then pass the output into another function that acts as a reviewer to produce the next version of the code.
 
+G
+
 <br><br><br><br>
 
 ## HISTORY - LOOPING - CONTEXT - TOOLS
@@ -194,6 +200,8 @@ With the following tools, one can create one's own coding agent. LINKS.md has li
 - bash
 
 In fact, `bash` is the only tool you need.
+
+## PROMPT ENGINEERING => CONTEXT ENGINEERING => HARNESS ENGINEERING
 
 <br><br><br><br>
 
