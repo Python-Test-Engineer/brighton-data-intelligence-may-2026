@@ -68,12 +68,13 @@
             });
 
             const data = await response.json();
+
             // ******************** AI BIT ********************
 
             // NB No mememory every call is stateless
             const msg = data.choices[0].message.content; // We can drill down for the content of the first message choice to get the 'answer'.
             console.log('API Response:', data);
-            console.log(data);
+
             let output = "";
 
             if (data.error) {
