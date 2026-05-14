@@ -75,7 +75,10 @@
                content: userPrompt
             }
          ];
+         // TOOLS
          // We must define tools in a certain way as the model is trained to expect tools in this format.
+
+         // Libraries make this a lot easier - this is the low levedl implementation.
          const tools = [
             {
                type: 'function',
